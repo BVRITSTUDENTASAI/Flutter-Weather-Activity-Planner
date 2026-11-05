@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter_weather_activity_planner/models/weather_model.dart';
 
 class WeatherProvider extends ChangeNotifier {
-  static const String _apiKey = 'YOUR_API_KEY';
+  static const String _apiKey = '418f9eff8fc394e902016db864679394';
 
   WeatherModel? _currentWeather;
   List<WeatherForecast> _forecast = [];
@@ -47,7 +47,7 @@ class WeatherProvider extends ChangeNotifier {
     notifyListeners();
 
     try {
-      if (_apiKey == 'YOUR_API_KEY') {
+      if (_apiKey == '418f9eff8fc394e902016db864679394') {
         _currentWeather = WeatherModel(
           cityName: sanitizedCity,
           description: 'Clear Sky',
